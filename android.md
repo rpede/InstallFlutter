@@ -1,52 +1,56 @@
 # Android
 
-## Install Windows
+Download and install Android Studio from [https://developer.android.com/studio](https://developer.android.com/studio)
 
-`winget install --id Google.AndroidStudio`
-
-## Install Mac
-
-*Requires MacOS 10.14 (Mojave) or higher*
-
-[Download](https://developer.android.com/studio)
-
-Open and drag Android Studio icon into Applications folder.
-
-Follow the instructions.
-
-## Configure SDK
-
-Verify that flutter is able to locate the SDK by running `flutter doctor`.
+Accept all the defaults and the license agreements, except that you don't want to import existing settings.
 
 Open **Android Studio**
 
-### Virtual Android device
-
-Open **Virtual Device Manager**
+Click **More Actions** under **Projects**, select **SDK Manager**.
 
 ![](./screenshots/android1.png)
 
-Create a new virtual Android device by clicking **Create Device**
+Check **Android SDK Command-line Tools (latest)** and click **OK**.
 
 ![](./screenshots/android2.png)
 
-You should pick something with Play Store enabled. I chose Pixel 2.
+Accept all the questions.
 
-![](./screenshots/android3.png)
+You should now be back to the "Welcome to Android Studio" screen.
 
-Click the small download icon on item with API Level 33.
-Wait for it to complete then next.
+Click **Plugins** in left panel.
 
-![](./screenshots/android4.png)
+![](./screenshots/flutter_plugin.png)
 
-Finish
+Install **Flutter** pluging and **Restart IDE**.
 
-![](./screenshots/android5.png)
+That should add a **New Flutter Project** button to the welcome screen as seen below.
 
-Open **SDK Manager**
+![](./screenshots/new_flutter_project.png)
 
-![](./screenshots/android6.png)
+## Verify installation
 
-Check **Android SDK Command-line Tools** and click **OK**.
+In "GIT Bash" (or "Terminal" on Mac) run:
 
-![](./screenshots/android7.png)
+```sh
+flutter doctor --android-licenses
+```
+
+Answer `y` to all questions, then:
+
+```sh
+flutter doctor
+```
+
+It should look something like:
+
+![](./screenshots/doctor_done.png)
+
+Verify that there is a checkmark for the following:
+
+```
+[√] Flutter
+[√] Android toolchain develop for Android devices
+[√] Chrome develop for the web
+[√] Android Studio
+```

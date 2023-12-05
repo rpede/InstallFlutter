@@ -1,60 +1,46 @@
 # Flutter Setup on Windows
 
-## Optional
-
-Get **Windows Terminal** from **Microsoft Store**.
-
-Or install using winget from powershell with:
-```powershell
-winget install --id Microsoft.WindowsTerminal
-```
-
 ## Install flutter
 
-**Windows+R** -> **powershell**
+Open "GIT Bash"
 
-```powershell
-cd path/you/want/flutter/in
-winget install --id Git.Git
+```sh
+cd ~
 git clone https://github.com/flutter/flutter.git -b stable
-
-pwd
 ```
 
-Remember the path in output from last command.
-
 Now we need to let the OS know where **flutter** binary is located.
+
+*You might need to translate if you OS is in a different language.*
 
 Press **Windows** button.
 Type **environment**.
 Select **Edit the system environment variables**.
 
+You should see a window this:
+
 ![](./screenshots/envvar1.png)
+
 Click **Environment Variables**
 
-
 ![](./screenshots/envvar2.png)
+
 Click **Edit** for **Path** variable.
 
 ![](./screenshots/envvar3.png)
-Insert the path from output above and add `\bin` to the end.
 
-Reboot!
+Click **New** and type `%USERPROFILE%\flutter\bin`
 
-Open powershell again and type `flutter doctor`.
+**OK** all the windows to close them.
 
-If Chrome is missing then you can install it with:
-```powershell
-winget install --id Google.Chrome
-```
+---> Reboot! <---
 
-## Visual Studio Code
+Open "GIT Bash" and run `flutter doctor`
 
-If Visual Studio Code is missing then you can get in with:
-```powershell
-winget install --id Microsoft.VisualStudioCode
-```
+If Chrome is missing (as in screenshot), then install it to its default location.
 
-Install the highlighted (yellow) extensions.
+![](./screenshots/doctor_missing_chrome.png)
 
-![](./screenshots/vscode.png)
+Don't worry about the other issues for now.
+
+[Continue](./android.md)
