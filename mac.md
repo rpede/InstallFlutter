@@ -1,6 +1,6 @@
 # Flutter Setup on MacOS
 
-**Warning I don't have a Mac to test the instructions on**
+## Prerequisite
 
 Open "Terminal"
 
@@ -9,6 +9,8 @@ If you are on the new Apple Silicon Mac you need to install the translation laye
 ```sh
 sudo softwareupdate --install-rosetta --agree-to-license
 ```
+
+## Install Flutter-SDK
 
 Now get flutter directly from github
 
@@ -24,8 +26,14 @@ echo $SHELL
 ```
 
 Edit `$HOME/.bashrc` or `$HOME/.zshrc` depending on the output.
+For the rest if the text I'm going to assume you are using zsh so the shell
+config is referred to as `.zshrc`.
 
-Add following line at the end of the file
+You can use either `vim` or `nano` to edit the config.
+In `nano` you can save with *Control+o* then exit with *Control+x*.
+In `vim` it is *ESCAPE* then type `:wq` .
+
+Add following line at the end of the file:
 
 ```sh
 export PATH="$PATH:$HOME/flutter/bin"
@@ -42,5 +50,61 @@ flutter doctor
 Install **Chrome** if missing.
 
 Don't worry about the other issues for now.
+
+## iPhone
+
+If you have an iPhone and would like to be able to build your Flutter projects
+for it, then there is a bit of extra setup you need to do.
+
+If you don't have an iPhone then skip to [here](./android.md).
+
+To build for iPhone you will need Xcode which can be found in App Store.
+So go ahead and install it!
+
+To make plugins work for iPhone you need to have
+[CocoaPods](https://cocoapods.org/) installed.
+But before you can install it you will need a couple of other things.
+
+Install [Homebrew](https://brew.sh/) if you don't have it already.
+If you are unsure, you can check by entering `brew` in Terminal.
+
+```sh
+# To install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then add the following to `.zshrc` :
+
+```sh
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Type `source .zshrc` to apply changes.
+
+You can use brew to install Ruby which is required by CocoaPods.
+
+```sh
+brew install ruby
+```
+
+Then add a couple of more environment variables to `.zshrc`.
+
+```sh
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+```
+
+Finally install CocoaPods with:
+
+```
+brew install cocoapods
+brew link cocoapods
+```
+
+Hopefully you should see a checkmark for cocoapods now when running `flutter doctor` .
+
+Next you will install an IDE for Flutter, namely Android Studio.
+Don't let the name fool you, as it is great for Flutter development no matter the platform.
 
 [Continue](./android.md)
