@@ -3,9 +3,11 @@
 ## Install Flutter
 
 - [Windows](./flutter_windows.md)
-- [Mac OS](./flutter_mac.md)
+- [macOS](./flutter_mac.md)
 - [Linux](./flutterlinux.md)
 
-## Install Android SDK
+## Install Android Studio
 
-- [Android Studio - Windows + Mac](./android_studio.md)
+Same for all platforms (macOS, Windows & Linux)
+
+- [Android Studio](./android_studio.md)
