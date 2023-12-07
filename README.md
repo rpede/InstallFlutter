@@ -1,6 +1,6 @@
 # Setup development environment for Flutter
 
-## Install Flutter
+## Install Flutter SDK
 
 - [Windows](./flutter_windows.md)
 - [macOS](./flutter_mac.md)

@@ -1,4 +1,4 @@
-# Android
+# Android Studio
 
 Download and install Android Studio from [https://developer.android.com/studio](https://developer.android.com/studio).
 
