@@ -46,4 +46,4 @@ You should have a checkmark on the following items
 
 Next you will install Android toolchain and Android Studio.
 
-[Continue](./android.md)
+[Continue](./android_studio.md)

@@ -4,7 +4,7 @@
 
 - [Windows](./flutter_windows.md)
 - [macOS](./flutter_mac.md)
-- [Linux](./flutterlinux.md)
+- [Linux](./flutter_linux.md)
 
 ## Install Android Studio
 
