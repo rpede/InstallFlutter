@@ -56,7 +56,7 @@ Don't worry about the other issues for now.
 If you have an iPhone and would like to be able to build your Flutter projects
 for it, then there is a bit of extra setup you need to do.
 
-If you don't have an iPhone then skip to [here](./android.md).
+If you don't have an iPhone then skip to [here](./android_studio.md).
 
 To build for iPhone you will need Xcode which can be found in App Store.
 So go ahead and install it!
@@ -107,4 +107,4 @@ Hopefully you should see a checkmark for cocoapods now when running `flutter doc
 Next you will install an IDE for Flutter, namely Android Studio.
 Don't let the name fool you, as it is great for Flutter development no matter the platform.
 
-[Continue](./android.md)
+[Continue](./android_studio.md)
