@@ -1,6 +1,6 @@
-# Android
+# Android Studio
 
-Download and install Android Studio from [https://developer.android.com/studio](https://developer.android.com/studio)
+Download and install Android Studio from [https://developer.android.com/studio](https://developer.android.com/studio).
 
 Accept all the defaults and the license agreements, except that you don't want to import existing settings.
 

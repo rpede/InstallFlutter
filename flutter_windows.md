@@ -43,4 +43,4 @@ If Chrome is missing (as in screenshot), then install it to its default location
 
 Don't worry about the other issues for now.
 
-[Continue](./android.md)
+[Continue](./android_studio.md)

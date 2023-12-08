@@ -1,10 +1,13 @@
 # Setup development environment for Flutter
 
-## Install Flutter
+## Install Flutter SDK
 
-- [Windows](./windows.md)
-- [Mac OS](./mac.md)
+- [Windows](./flutter_windows.md)
+- [macOS](./flutter_mac.md)
+- [Linux](./flutter_linux.md)
 
-## Install Android SDK
+## Install Android Studio
 
-- [Android Studio - Windows + Mac](android.md)
+Same for all platforms (macOS, Windows & Linux)
+
+- [Android Studio](./android_studio.md)
