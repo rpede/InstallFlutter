@@ -1,8 +1,9 @@
 # Flutter Setup on MacOS
 
-**Warning I don't have a Mac to test the instructions on**
+Open "Terminal" app (search in spotlight).
 
-Open "Terminal"
+Type `git` to verify that you have GIT installed.
+If you don't it will ask you if you want to install developer tools, go ahead and do that.
 
 If you are on the new Apple Silicon Mac you need to install the translation layer for x86 code.
 
