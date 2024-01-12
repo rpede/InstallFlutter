@@ -1,5 +1,7 @@
 # Flutter setup on Linux
 
+# [Video](https://easv.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2a6a027b-ab52-455d-a022-b0d00180fc4c)
+
 Open a terminal.
 
 ```sh
