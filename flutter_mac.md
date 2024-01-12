@@ -1,5 +1,7 @@
 # Flutter Setup on MacOS
 
+# [Video](https://easv.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c2a6f1e2-dca0-4462-96a0-b0d100e54e5b)
+
 ## Prerequisite
 
 Open "Terminal" app (search in spotlight).
