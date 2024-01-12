@@ -1,5 +1,7 @@
 # Flutter Setup on Windows
 
+## [Video](https://easv.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6157cbe0-b7b4-4ad8-8977-b0d100090ca1)
+
 ## Install flutter
 
 Open "GIT Bash"
